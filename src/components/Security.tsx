@@ -95,13 +95,13 @@ export function Security({ hideHeading }: SectionProps) {
               ))}
             </Stagger>
             <Reveal delay={0.15} className="mt-6 text-[13px] text-muted">
-              Read about how DexAI handles personal data in our{" "}
-              <a href={LINKS.gdpr} target="_blank" rel="noopener noreferrer" className="font-semibold text-navy underline-offset-4 hover:underline">
-                GDPR compliance
+              Read how this website handles data in our{" "}
+              <a href={LINKS.privacy} className="font-semibold text-navy underline-offset-4 hover:underline">
+                Privacy Policy
               </a>{" "}
               and{" "}
-              <a href={LINKS.privacy} target="_blank" rel="noopener noreferrer" className="font-semibold text-navy underline-offset-4 hover:underline">
-                privacy policy
+              <a href={LINKS.cookies} className="font-semibold text-navy underline-offset-4 hover:underline">
+                Cookie Policy
               </a>
               .
             </Reveal>

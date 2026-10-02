@@ -146,7 +146,7 @@ export function CookieConsent() {
                   <div className="font-mono text-[11px] uppercase tracking-[0.14em] text-brand">Cookies</div>
                   <p className="mt-1.5 text-[15px] leading-relaxed text-body">
                     We use cookies to improve your experience, analyze website usage, and support essential website functionality.{" "}
-                    <a href={LINKS.cookies} target="_blank" rel="noopener noreferrer" className="font-semibold text-ink underline-offset-4 hover:underline">
+                    <a href={LINKS.cookies} className="font-semibold text-ink underline-offset-4 hover:underline">
                       Cookie Policy
                     </a>
                   </p>

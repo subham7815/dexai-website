@@ -20,15 +20,15 @@ export const SITE = {
 
 export const LINKS = {
   bookDemo: "/contact",
-  blog: "https://dexai.app/blog",
-  about: "https://dexai.app/about",
-  team: "https://dexai.app/team",
+  about: "/about",
+  team: "/team",
+  services: "/services",
+  blog: "/blog",
+  gdpr: "/gdpr-compliance",
   contact: "/contact",
-  services: "https://dexai.app/services",
-  privacy: "https://dexai.app/privacy-policy",
-  terms: "https://dexai.app/terms-and-conditions",
-  cookies: "https://dexai.app/cookie-policy",
-  gdpr: "https://dexai.app/gdpr-compliance",
+  privacy: "/privacy-policy",
+  terms: "/terms-and-conditions",
+  cookies: "/cookie-policy",
 } as const;
 
 export interface NavItem {
@@ -38,11 +38,11 @@ export interface NavItem {
 }
 
 export const LEGAL_LINKS: NavItem[] = [
-  { label: "Privacy Policy", href: LINKS.privacy, external: true },
-  { label: "Cookie Policy", href: LINKS.cookies, external: true },
-  { label: "Terms & Conditions", href: LINKS.terms, external: true },
+  { label: "Privacy Policy", href: LINKS.privacy },
+  { label: "Cookie Policy", href: LINKS.cookies },
+  { label: "Terms & Conditions", href: LINKS.terms },
   { label: "Security", href: "/security" },
-  { label: "GDPR", href: LINKS.gdpr, external: true },
+  { label: "GDPR", href: LINKS.gdpr },
 ];
 
 /* ------------------------------------------------------------------
