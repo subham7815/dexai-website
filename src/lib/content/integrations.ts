@@ -1,6 +1,6 @@
 import type { Step } from "./product";
 
-export type IntegrationSlug = "xero" | "quickbooks" | "freeagent" | "sage" | "hmrc";
+export type IntegrationSlug = "xero" | "quickbooks" | "freeagent" | "sage" | "capium" | "hmrc";
 
 export interface IntegrationPage {
   slug: IntegrationSlug;
@@ -60,6 +60,16 @@ export const INTEGRATION_PAGES: Record<IntegrationSlug, IntegrationPage> = {
     description: "Export organised financial records from DexAI into Sage so your ledgers reflect every processed document.",
     metaDescription: "Connect DexAI with Sage to export organised financial records.",
     syncs: ["Organised expense records", "Supplier invoice details", "VAT amounts captured on each record"],
+    steps: ACCOUNTING_STEPS,
+  },
+  capium: {
+    slug: "capium",
+    name: "Capium",
+    eyebrow: "Capium integration",
+    title: "DexAI and Capium.",
+    description: "Let DexAI capture, extract and categorise your documents, then keep your Capium records up to date with organised data.",
+    metaDescription: "Connect DexAI with Capium to keep records current with organised, categorised financial data.",
+    syncs: ["Categorised expenses with their source documents", "Supplier and reference details", "VAT amounts captured on each record"],
     steps: ACCOUNTING_STEPS,
   },
   hmrc: {

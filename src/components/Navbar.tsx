@@ -231,26 +231,15 @@ export function Navbar() {
           </ul>
 
           <div className="hidden items-center gap-2 lg:flex">
-            <a
-              href={LINKS.login}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={cn("whitespace-nowrap px-3 text-[15px] font-semibold transition-colors", dark ? "text-white/85 hover:text-white" : "text-ink/75 hover:text-ink")}
-            >
-              Log in
-            </a>
-            <Button href={LINKS.bookDemo} variant={dark ? "onDarkGhost" : "secondary"} size="sm" className="hidden xl:inline-flex">
+            <Button href={LINKS.bookDemo} size="sm" icon={<ArrowRight size={14} />}>
               Book a Demo
-            </Button>
-            <Button href={LINKS.getStarted} size="sm" icon={<ArrowRight size={14} />}>
-              Get Started
             </Button>
           </div>
 
           {/* Mobile toggle */}
           <div className="flex items-center gap-2 lg:hidden">
-            <Button href={LINKS.getStarted} size="sm" className="hidden sm:inline-flex">
-              Get Started
+            <Button href={LINKS.bookDemo} size="sm" className="hidden sm:inline-flex">
+              Book a Demo
             </Button>
             <button
               type="button"
@@ -346,15 +335,9 @@ export function Navbar() {
                 })}
               </ul>
               <div className="mt-6 flex flex-col gap-2">
-                <Button href={LINKS.getStarted} fullWidth icon={<ArrowRight size={16} />}>
-                  Get Started
-                </Button>
-                <Button href={LINKS.bookDemo} variant="secondary" fullWidth>
+                <Button href={LINKS.bookDemo} fullWidth icon={<ArrowRight size={16} />}>
                   Book a Demo
                 </Button>
-                <a href={LINKS.login} target="_blank" rel="noopener noreferrer" className="py-2 text-center text-sm font-semibold text-muted hover:text-ink">
-                  Log in
-                </a>
               </div>
             </div>
           </motion.div>

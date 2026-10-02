@@ -9,7 +9,7 @@ import { SectionHeading } from "./ui/SectionHeading";
 
 /**
  * Hub-and-spoke diagram. The SVG draws curved paths from the DexAI hub to
- * five endpoints aligned with a 5-column card grid below. CSS animates the
+ * six endpoints aligned with a 6-column card grid below. CSS animates the
  * dash offset and SVG animateMotion moves a dot along each path.
  */
 const W = 1000;
@@ -41,7 +41,7 @@ export function Integrations({ hideHeading }: SectionProps) {
 
         {/* Desktop diagram */}
         <Reveal className={cn("hidden lg:block", !hideHeading && "mt-14 lg:mt-20")}>
-          <div className="relative mx-auto max-w-5xl pt-8">
+          <div className="relative mx-auto max-w-6xl pt-8">
             <svg viewBox={`0 0 ${W} ${H}`} className="h-auto w-full" aria-hidden>
               {INTEGRATIONS.map((it, i) => (
                 <g key={it.id}>
@@ -74,16 +74,17 @@ export function Integrations({ hideHeading }: SectionProps) {
             </div>
 
             {/* Endpoints, aligned with the SVG path ends */}
-            <ul className="-mt-px grid grid-cols-5 gap-3">
+            <ul className="-mt-px grid grid-cols-6 gap-3">
               {INTEGRATIONS.map((it) => (
                 <li key={it.id}>
-                  <Link href={`/integrations/${it.id}`} className="group flex h-full flex-col rounded-card border border-line bg-white p-5 transition-colors duration-300 hover:border-ink/40">
+                  <Link href={`/integrations/${it.id}`} className="group flex h-full flex-col rounded-card border border-line bg-white p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-ink/40 hover:shadow-float">
                     <div className="flex items-start justify-between">
                       <IntegrationBadge integration={it} showName={false} size="lg" />
                       <ArrowUpRight size={14} className="text-faint transition-colors group-hover:text-brand" aria-hidden />
                     </div>
-                    <div className="mt-4 text-base font-bold text-ink">{it.name}</div>
-                    <p className="mt-1 text-[13px] leading-snug text-muted">{it.description}</p>
+                    <div className="mt-5 text-lg font-bold text-ink">{it.name}</div>
+                    <div className="mt-0.5 font-mono text-[10px] uppercase tracking-[0.12em] text-faint">{it.category}</div>
+                    <p className="mt-3 text-[13px] leading-snug text-muted">{it.description}</p>
                   </Link>
                 </li>
               ))}
@@ -99,6 +100,7 @@ export function Integrations({ hideHeading }: SectionProps) {
                 <IntegrationBadge integration={it} showName={false} size="md" />
                 <div>
                   <div className="font-bold text-ink">{it.name}</div>
+                  <div className="font-mono text-[10px] uppercase tracking-[0.12em] text-faint">{it.category}</div>
                   <p className="mt-0.5 text-[14px] leading-snug text-muted">{it.description}</p>
                 </div>
               </Link>

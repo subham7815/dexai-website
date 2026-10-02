@@ -5,6 +5,8 @@
  * demonstrate the DexAI interface. They do not represent real accounts.
  */
 
+import { Briefcase, Calculator, Cloud, FileCheck2, Landmark, Library, type LucideIcon } from "lucide-react";
+
 export const SITE = {
   name: "DexAI",
   tagline: "Financial automation, powered by AI.",
@@ -17,8 +19,6 @@ export const SITE = {
 } as const;
 
 export const LINKS = {
-  getStarted: "https://manage-dev.dexai.app",
-  login: "https://manage-dev.dexai.app",
   bookDemo: "https://dexai.app/contact",
   blog: "https://dexai.app/blog",
   about: "https://dexai.app/about",
@@ -51,18 +51,21 @@ export const LEGAL_LINKS: NavItem[] = [
 export interface Integration {
   id: string;
   name: string;
-  short: string;
+  /** Neutral glyph shown in the badge; partner logos are not bundled. */
+  icon: LucideIcon;
+  category: "Accounting software" | "Tax & compliance";
   description: string;
   /** Brand-neutral tint used for the badge; not the partner's identity. */
   tone: "navy" | "red" | "ink";
 }
 
 export const INTEGRATIONS: Integration[] = [
-  { id: "xero", name: "Xero", short: "X", description: "Sync categorised expenses and documents to Xero.", tone: "navy" },
-  { id: "quickbooks", name: "QuickBooks", short: "QB", description: "Push processed transactions into QuickBooks.", tone: "navy" },
-  { id: "freeagent", name: "FreeAgent", short: "FA", description: "Keep FreeAgent books current with reconciled data.", tone: "navy" },
-  { id: "sage", name: "Sage", short: "S", description: "Export organised financial records to Sage.", tone: "navy" },
-  { id: "hmrc", name: "HMRC", short: "MTD", description: "Built for Making Tax Digital workflows.", tone: "red" },
+  { id: "xero", name: "Xero", icon: Cloud, category: "Accounting software", description: "Sync categorised expenses and documents to Xero.", tone: "navy" },
+  { id: "quickbooks", name: "QuickBooks", icon: Calculator, category: "Accounting software", description: "Push processed transactions into QuickBooks.", tone: "navy" },
+  { id: "freeagent", name: "FreeAgent", icon: Briefcase, category: "Accounting software", description: "Keep FreeAgent books current with reconciled data.", tone: "navy" },
+  { id: "sage", name: "Sage", icon: Library, category: "Accounting software", description: "Export organised financial records to Sage.", tone: "navy" },
+  { id: "capium", name: "Capium", icon: FileCheck2, category: "Accounting software", description: "Keep Capium records current with organised, categorised data.", tone: "navy" },
+  { id: "hmrc", name: "HMRC", icon: Landmark, category: "Tax & compliance", description: "Built for Making Tax Digital workflows.", tone: "red" },
 ];
 
 /* ------------------------------------------------------------------

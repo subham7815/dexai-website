@@ -33,7 +33,7 @@ function ConnectionVisual({ slug }: { slug: IntegrationSlug }) {
       <div className="absolute inset-0 grid-bg opacity-70 [mask-image:radial-gradient(ellipse_at_center,black,transparent_80%)]" aria-hidden />
       <div className="relative flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
         <div className="flex items-center gap-3 rounded-xl border border-line bg-white px-5 py-3 shadow-float">
-          <Logo height={26} asLink={false} />
+          <Logo height={26} asLink={false} className="max-w-none shrink-0" />
         </div>
         <div className="flex items-center gap-1 sm:flex-1 sm:px-4" aria-hidden>
           <span className="hidden h-px flex-1 bg-line sm:block" />

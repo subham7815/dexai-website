@@ -1,9 +1,8 @@
 "use client";
 
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
-import { ArrowUpRight, Pause, Play } from "lucide-react";
+import { Pause, Play } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
-import { LINKS } from "@/lib/constants";
 import { cn, pad2, sectionPad, type SectionProps } from "@/lib/utils";
 import { DEMO_SCREENS, SCREEN_COMPONENTS, type DemoScreenKey } from "./demo/DemoScreens";
 import { DemoTag } from "./ui/Badge";
@@ -53,9 +52,6 @@ export function ProductDemo({ hideHeading }: SectionProps) {
         <Reveal className={cn("flex flex-col gap-3 sm:flex-row", !hideHeading && "mt-12")}>
           <Button onClick={() => setPlaying((p) => !p)} icon={playing ? <Pause size={15} /> : <Play size={15} />} aria-pressed={playing} className="w-full sm:w-auto">
             {playing ? "Pause Demo" : "Play Demo"}
-          </Button>
-          <Button href={LINKS.getStarted} variant="secondary" icon={<ArrowUpRight size={15} />} className="w-full sm:w-auto">
-            Explore Product
           </Button>
         </Reveal>
 

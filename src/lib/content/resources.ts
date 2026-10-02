@@ -17,7 +17,7 @@ export const DOC_TOPICS: DocTopic[] = [
   { title: "Bank feeds and matching", description: "Connecting accounts and working with suggested matches.", icon: Landmark, items: ["Connecting a bank", "Confirming matches", "Handling exceptions"] },
   { title: "VAT reporting", description: "Period summaries and Making Tax Digital workflows.", icon: Percent, items: ["VAT on documents", "Reporting periods", "MTD workflows"] },
   { title: "Multi-company", description: "Managing several entities from one login.", icon: Building2, items: ["Adding companies", "Routing documents", "Access per company"] },
-  { title: "Integrations", description: "Syncing with Xero, QuickBooks, FreeAgent and Sage.", icon: LayoutGrid, items: ["Connecting an integration", "What syncs", "Troubleshooting sync"] },
+  { title: "Integrations", description: "Syncing with Xero, QuickBooks, FreeAgent, Sage and Capium.", icon: LayoutGrid, items: ["Connecting an integration", "What syncs", "Troubleshooting sync"] },
   { title: "Security and access", description: "How records are protected and who can see what.", icon: ShieldCheck, items: ["User roles", "Audit history", "Data handling"] },
 ];
 
@@ -69,7 +69,7 @@ export const FAQ_GROUPS: { title: string; items: Faq[] }[] = [
   {
     title: "Integrations and technology",
     items: [
-      { q: "Which accounting tools does DexAI connect with?", a: "Xero, QuickBooks, FreeAgent and Sage, plus HMRC Making Tax Digital workflows." },
+      { q: "Which accounting tools does DexAI connect with?", a: "Xero, QuickBooks, FreeAgent, Sage and Capium, plus HMRC Making Tax Digital workflows." },
       { q: "Is DexAI just OCR?", a: "No. OCR reads the text; DexAI's vision-language model understands layout, and a set of specialist agents classifies, extracts, validates, reconciles and reports." },
       { q: "Does DexAI need a GPU?", a: "DexAI's models are optimised to run on CPU-only hardware as well as GPU-accelerated systems." },
     ],
@@ -77,7 +77,7 @@ export const FAQ_GROUPS: { title: string; items: Faq[] }[] = [
   {
     title: "Getting started",
     items: [
-      { q: "How do I start?", a: "Create an account from Get Started, add your company, connect a bank feed and capture a first document. Book a demo if you would like a guided walkthrough." },
+      { q: "How do I start?", a: "Book a demo and the team will walk you through adding your company, connecting a bank feed and capturing a first document." },
       { q: "Can you help migrate historical data?", a: "Yes. The Data Migration Agent ingests, maps, transforms and validates historical records with duplicate detection, and reports progress until final verification. Contact us to plan a migration." },
       { q: "Where can I read about data handling?", a: "See the Security & Trust page, the privacy policy and the GDPR page on dexai.app." },
     ],

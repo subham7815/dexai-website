@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useReducedMotion, useScroll, useTransform } from "motion/react";
-import { ArrowRight, PlayCircle } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useRef } from "react";
 import { LINKS } from "@/lib/constants";
 import { Button } from "./ui/Button";
@@ -56,10 +56,7 @@ export function Hero() {
               transition={{ duration: 0.7, ease, delay: 0.2 }}
               className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center"
             >
-              <Button href={LINKS.getStarted} size="lg" icon={<ArrowRight size={16} />} className="sm:min-w-40">
-                Get Started
-              </Button>
-              <Button href={LINKS.bookDemo} size="lg" variant="onDarkGhost" icon={<PlayCircle size={16} />}>
+              <Button href={LINKS.bookDemo} size="lg" icon={<ArrowRight size={16} />} className="sm:min-w-40">
                 Book a Demo
               </Button>
             </motion.div>

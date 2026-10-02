@@ -27,10 +27,7 @@ export function CTA() {
             </p>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row lg:col-span-4 lg:justify-end">
-            <Button href={LINKS.getStarted} size="lg" variant="onDark" icon={<ArrowRight size={16} />}>
-              Get Started
-            </Button>
-            <Button href={LINKS.bookDemo} size="lg" variant="onDarkGhost">
+            <Button href={LINKS.bookDemo} size="lg" variant="onDark" icon={<ArrowRight size={16} />}>
               Book a Demo
             </Button>
           </div>

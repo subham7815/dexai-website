@@ -71,10 +71,7 @@ export function PageHero({ eyebrow, title, description, crumbs, noActions, actio
               <div className={cn("mt-9 flex flex-col gap-3 sm:flex-row", center && "sm:justify-center")}>
                 {actions ?? (
                   <>
-                    <Button href={LINKS.getStarted} size="lg" icon={<ArrowRight size={16} />}>
-                      Get Started
-                    </Button>
-                    <Button href={LINKS.bookDemo} size="lg" variant="secondary">
+                    <Button href={LINKS.bookDemo} size="lg" icon={<ArrowRight size={16} />}>
                       Book a Demo
                     </Button>
                   </>
