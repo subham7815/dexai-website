@@ -8,6 +8,7 @@ Built with Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS v4 and Mo
 ```bash
 npm install
 npm run dev
+
 ```
 
 Open http://localhost:3000.
