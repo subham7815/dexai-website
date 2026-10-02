@@ -32,7 +32,7 @@ export default function DemoPage() {
         eyebrow="Product demo & videos"
         title="See DexAI in action."
         description="Walk through the product from first upload to final report. Play the interactive demo or explore each step yourself, then watch the video walkthroughs as they are released."
-        crumbs={[{ label: "Resources", href: "/resources" }, { label: "Product Demo & Videos" }]}
+        crumbs={[{ label: "Product", href: "/product" }, { label: "Product Demo & Videos" }]}
         align="center"
         noActions
       />
@@ -61,7 +61,7 @@ export default function DemoPage() {
         </div>
       </section>
 
-      <RelatedPages eyebrow="Go deeper" title="Explore each capability" links={getGroup("Product").items!} />
+      <RelatedPages eyebrow="Go deeper" title="Explore each capability" links={getGroup("Product").items!.filter((i) => i.href !== "/demo")} />
       <CTA />
     </>
   );

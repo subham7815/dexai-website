@@ -3,6 +3,7 @@ import { CTA } from "@/components/CTA";
 import { IntegrationData } from "@/components/IntegrationData";
 import { Integrations } from "@/components/Integrations";
 import { PageHero } from "@/components/PageHero";
+import { PhotoFeature } from "@/components/PhotoFeature";
 import { RelatedPages } from "@/components/RelatedPages";
 import { StepsList } from "@/components/StepsList";
 import { getGroup } from "@/lib/navigation";
@@ -33,7 +34,14 @@ export default function IntegrationsPage() {
           { title: "Sync", description: "Clean records flow into your accounting software." },
         ]}
       />
-      <RelatedPages eyebrow="By tool" title="Integration guides" links={getGroup("Integrations").items!} />
+      <PhotoFeature
+        photo="accountantDesk"
+        eyebrow="Fits your workflow"
+        title="Your accountant keeps the software they know."
+        description="DexAI does the capture, extraction and matching, then hands clean records to the tool you already use."
+        bullets={["Categorised records with their source documents", "Supplier and VAT details on every entry", "Works alongside your existing software"]}
+      />
+      <RelatedPages eyebrow="By tool" title="Integration guides" links={getGroup("Integrations").items!} className="border-y border-line bg-surface" />
       <CTA />
     </>
   );

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { CTA } from "@/components/CTA";
 import { DataMigration } from "@/components/DataMigration";
 import { PageHero } from "@/components/PageHero";
+import { PhotoFeature } from "@/components/PhotoFeature";
 import { RelatedPages } from "@/components/RelatedPages";
 import { Button } from "@/components/ui/Button";
 import { LINKS } from "@/lib/constants";
@@ -34,6 +35,14 @@ export default function DataMigrationPage() {
         }
       />
       <DataMigration hideHeading />
+      <PhotoFeature
+        photo="financeDesk"
+        reverse
+        eyebrow="Your history comes with you"
+        title="Historical records, without the rekeying."
+        description="The Data Migration Agent brings existing records across in validated batches while daily processing carries on."
+        bullets={["Duplicates caught before they are imported", "Progress visible at every stage", "Final verification before you switch over"]}
+      />
       <RelatedPages eyebrow="More of the product" title="Keep exploring DexAI" links={getGroup("Product").items!.filter((i) => i.href !== "/product/data-migration")} columns={4} className="border-y border-line bg-surface" />
       <CTA />
     </>

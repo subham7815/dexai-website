@@ -65,6 +65,7 @@ export const NAV_GROUPS: NavGroup[] = [
       { label: "Automation", href: "/product/automation", description: "Your workflow on autopilot.", icon: Workflow },
       { label: "Agentic AI", href: "/product/agentic-ai", description: "Specialist agents for every step.", icon: Sparkles },
       { label: "Data Migration", href: "/product/data-migration", description: "Move historical data safely.", icon: Database },
+      { label: "Product Demo & Videos", href: "/demo", description: "Interactive demo and video walkthroughs.", icon: PlayCircle },
     ],
   },
   {
@@ -126,7 +127,6 @@ export const NAV_GROUPS: NavGroup[] = [
       { label: "AI Insights", href: "/resources/ai-insights", description: "How the AI actually works.", icon: Lightbulb },
       { label: "FAQs", href: "/resources/faqs", description: "Short answers to common questions.", icon: HelpCircle },
       { label: "Blog", href: LINKS.blog, description: "News and guides from the team.", icon: Newspaper, external: true },
-      { label: "Product Demo & Videos", href: "/demo", description: "Interactive demo and video walkthroughs.", icon: PlayCircle },
       { label: "Why DexAI", href: "/why-dexai", description: "What changes when you automate.", icon: Sparkles },
       { label: "Security & Trust", href: "/security", description: "How financial records are handled.", icon: ShieldCheck },
     ],
