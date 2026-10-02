@@ -19,11 +19,11 @@ export const SITE = {
 } as const;
 
 export const LINKS = {
-  bookDemo: "https://dexai.app/contact",
+  bookDemo: "/contact",
   blog: "https://dexai.app/blog",
   about: "https://dexai.app/about",
   team: "https://dexai.app/team",
-  contact: "https://dexai.app/contact",
+  contact: "/contact",
   services: "https://dexai.app/services",
   privacy: "https://dexai.app/privacy-policy",
   terms: "https://dexai.app/terms-and-conditions",

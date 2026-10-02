@@ -160,7 +160,7 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
       { label: "About", href: LINKS.about, external: true },
       { label: "Team", href: LINKS.team, external: true },
       { label: "Services", href: LINKS.services, external: true },
-      { label: "Contact", href: LINKS.contact, external: true },
+      { label: "Contact", href: LINKS.contact },
     ],
   },
 ];

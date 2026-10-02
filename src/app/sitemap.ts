@@ -27,6 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/resources/ai-insights",
     "/resources/faqs",
     "/demo",
+    "/contact",
     "/why-dexai",
     "/security",
   ];
