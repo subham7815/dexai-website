@@ -14,7 +14,7 @@ import { Logo } from "./ui/Logo";
 const ease = [0.22, 1, 0.36, 1] as const;
 
 /** Routes whose top-of-page hero is dark; the bar renders in its inverted scheme there until scrolled. */
-const DARK_HERO_ROUTES = new Set(["/"]);
+const DARK_HERO_ROUTES = new Set<string>();
 
 function isGroupActive(group: NavGroup, pathname: string) {
   if (group.external) return false;

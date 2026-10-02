@@ -26,11 +26,11 @@ type NativeButtonProps = BaseProps & { href?: undefined } & Omit<
 export type ButtonProps = AnchorProps | NativeButtonProps;
 
 const base =
-  "group/btn relative inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg font-semibold transition-all duration-200 ease-out select-none disabled:opacity-60 disabled:pointer-events-none active:translate-y-px";
+  "group/btn relative inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full font-semibold transition-all duration-200 ease-out select-none disabled:opacity-60 disabled:pointer-events-none active:translate-y-px";
 
 const variants: Record<Variant, string> = {
-  primary: "bg-brand text-white hover:bg-brand-dark",
-  secondary: "border border-ink/20 bg-transparent text-ink hover:border-ink hover:bg-ink hover:text-white",
+  primary: "bg-brand text-white shadow-[0_10px_24px_-10px_rgba(199,16,44,0.65)] hover:bg-brand-dark",
+  secondary: "border border-line-strong bg-white text-ink shadow-sm hover:border-ink",
   ghost: "bg-transparent text-ink hover:bg-surface",
   onDark: "bg-white text-navy-ink hover:bg-brand-soft",
   onDarkGhost: "border border-white/35 bg-transparent text-white hover:border-white hover:bg-white hover:text-navy-ink",

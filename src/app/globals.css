@@ -73,8 +73,8 @@
   --shadow-float: var(--dx-shadow);
   --shadow-float-lg: var(--dx-shadow-lg);
 
-  --radius-card: 12px;
-  --radius-card-lg: 16px;
+  --radius-card: 16px;
+  --radius-card-lg: 24px;
 
   --animate-marquee: marquee 40s linear infinite;
   --animate-dash: dash 2.4s linear infinite;
