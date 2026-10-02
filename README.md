@@ -31,7 +31,7 @@ Every navigation dropdown entry is its own page:
 | Features      | `/features`, `/features/invoice-processing`, `transaction-matching`, `mileage-tracking`, `multi-company`, `financial-analytics` |
 | Integrations  | `/integrations`, `/integrations/xero`, `quickbooks`, `freeagent`, `sage`, `hmrc`                        |
 | Technology    | `/technology` (OCR & VLM, AI training, infrastructure, architecture), `/product/agentic-ai`              |
-| Resources     | `/resources`, `/case-studies`, `/customer-stories`, `/resources/videos`, `/resources/documentation`, `/resources/ai-insights`, `/resources/faqs`, `/demo`, `/why-dexai`, `/security`, plus Blog on dexai.app |
+| Resources     | `/resources`, `/case-studies`, `/customer-stories`, `/resources/documentation`, `/resources/ai-insights`, `/resources/faqs`, `/demo`, `/why-dexai`, `/security`, plus Blog on dexai.app |
 
 Navigation and footer columns are defined once in `src/lib/navigation.ts`.
 Page copy lives in `src/lib/content/*.ts`; dynamic routes read from those maps

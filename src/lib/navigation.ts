@@ -122,12 +122,11 @@ export const NAV_GROUPS: NavGroup[] = [
     items: [
       { label: "Case Studies", href: "/case-studies", description: "How teams put DexAI to work.", icon: BookOpen },
       { label: "Customer Stories", href: "/customer-stories", description: "In our customers' words.", icon: MessageSquareQuote },
-      { label: "Product Videos", href: "/resources/videos", description: "Walkthroughs of the product.", icon: PlayCircle },
       { label: "Documentation", href: "/resources/documentation", description: "Guides to every part of DexAI.", icon: BookText },
       { label: "AI Insights", href: "/resources/ai-insights", description: "How the AI actually works.", icon: Lightbulb },
       { label: "FAQs", href: "/resources/faqs", description: "Short answers to common questions.", icon: HelpCircle },
       { label: "Blog", href: LINKS.blog, description: "News and guides from the team.", icon: Newspaper, external: true },
-      { label: "Product Demo", href: "/demo", description: "Interactive walkthrough of DexAI.", icon: PlayCircle },
+      { label: "Product Demo & Videos", href: "/demo", description: "Interactive demo and video walkthroughs.", icon: PlayCircle },
       { label: "Why DexAI", href: "/why-dexai", description: "What changes when you automate.", icon: Sparkles },
       { label: "Security & Trust", href: "/security", description: "How financial records are handled.", icon: ShieldCheck },
     ],

@@ -4,6 +4,7 @@ import { CTA } from "@/components/CTA";
 import { DocumentProcessing } from "@/components/DocumentProcessing";
 import { PageHero } from "@/components/PageHero";
 import { PhotoFeature } from "@/components/PhotoFeature";
+import { ProductScreenshot } from "@/components/ProductScreenshot";
 import { ProductWorkflow } from "@/components/ProductWorkflow";
 import { RelatedPages } from "@/components/RelatedPages";
 import { getGroup } from "@/lib/navigation";
@@ -44,6 +45,7 @@ export default function ProductPage() {
         }
       />
       <DocumentProcessing />
+      <ProductScreenshot />
       <AutomationPipeline />
       <RelatedPages eyebrow="Go deeper" title="Explore the product" links={getGroup("Product").items!} />
       <CTA />

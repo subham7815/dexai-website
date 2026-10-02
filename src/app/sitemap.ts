@@ -23,7 +23,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/case-studies",
     "/customer-stories",
     "/resources",
-    "/resources/videos",
     "/resources/documentation",
     "/resources/ai-insights",
     "/resources/faqs",
